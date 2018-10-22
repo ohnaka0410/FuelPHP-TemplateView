@@ -23,7 +23,7 @@ class Controller_Sample extends \Controller
 {
 	public function action_index()
 	{
-		// Viewをセット
+		// Set View
 		$view = \Presenter::forge('sample/index');
 
 		return \Response::forge($view);
