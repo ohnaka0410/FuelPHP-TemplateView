@@ -99,12 +99,12 @@ class View extends \Fuel\Core\View
 
 		// render the head template file
 		$return .= ( ! empty($this->template_head) and is_string($this->template_head))
-			? parent::forge($this->template_head, $this->data)->render()
+			? parent::forge($this->template_head, $this)->render()
 			: '';
 
 		// render the header template file
 		$return .= ( ! empty($this->template_header) and is_string($this->template_header))
-			? parent::forge($this->template_header, $this->data)->render()
+			? parent::forge($this->template_header, $this)->render()
 			: '';
 
 		// render the view file
@@ -112,12 +112,12 @@ class View extends \Fuel\Core\View
 
 		// render the footer template file
 		$return .= ( ! empty($this->template_footer) and is_string($this->template_footer))
-			? parent::forge($this->template_footer, $this->data)->render()
+			? parent::forge($this->template_footer, $this)->render()
 			: '';
 
 		// render the foot template file
 		$return .= ( ! empty($this->template_foot) and is_string($this->template_foot))
-			? parent::forge($this->template_foot, $this->data)->render()
+			? parent::forge($this->template_foot, $this)->render()
 			: '';
 
 		return $return;
